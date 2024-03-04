@@ -5,13 +5,13 @@ import React from 'react'
 const EmptySearch = () => {
   return (
     <div className="h-full flex flex-col items-center justify-center">
-    <Player
+    {/* <Player
       src="/no-search.json"
       loop 
       autoplay
       style={{ height: '250px', width: '250px' }}
        
-    />
+    /> */}
     <h2 className="text-2xl font-semibold mt-6">
       No results found!
     </h2>

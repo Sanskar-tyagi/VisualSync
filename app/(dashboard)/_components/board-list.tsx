@@ -6,10 +6,7 @@ import NewBoardButton from "./new-board-button";
 import { useQuery } from "convex/react";
 import BoardCard from "./board-card";
 import { toast } from "sonner";
-import { Dot, InfoIcon } from "lucide-react";
-import { Suspense } from "react";
-import SimpleLoader from "@/components/Loaders/simple-loader";
-
+import { Dot, InfoIcon } from "lucide-react"; 
 
 interface BoardListProps {
   orgId: string;
@@ -61,21 +58,18 @@ export const BoardList = ({ orgId, query }: BoardListProps) => {
   }
 
   if (!data?.length && query.search) {
-    return <Suspense fallback={<SimpleLoader />}>
-     <EmptySearch />;
-    </Suspense>
+    return     <EmptySearch />;
+
   }
 
   if (!data?.length && query.favorites) {
-    return <Suspense fallback={<SimpleLoader />}>
-   <EmptyFavorites />
-   </Suspense>
+    return    <EmptyFavorites />
+
   }
 
   if (!data?.length) {
-    return <Suspense fallback={<SimpleLoader />}>
-    <EmptyBoards />
-    </Suspense>
+    return    <EmptyBoards />
+
   }
 
   return (

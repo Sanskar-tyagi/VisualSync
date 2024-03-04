@@ -1,14 +1,13 @@
 interface DashboardLayoutProps{
     children:React.ReactNode
 }; 
-import React, { Suspense } from 'react'
+import React from 'react'
 import Sidebar from './_components/sidebar' 
 import OrgSidebar from './_components/OrgSidebar'
-import Navbar from './Navbar' 
-import SimpleLoader from '@/components/Loaders/simple-loader'
+import Navbar from './Navbar'  
 const DashboardLayout = ({children}:DashboardLayoutProps) => {
   return (
-    <Suspense fallback={<SimpleLoader/>}>
+ 
       <main className='h-full'>
         <Sidebar/>
         <div className="pl-[60px] h-full">
@@ -20,8 +19,7 @@ const DashboardLayout = ({children}:DashboardLayoutProps) => {
             </div>
             </div>
         </div>
-    </main>
-    </Suspense>
+    </main> 
   )
 }
 

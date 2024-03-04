@@ -7,7 +7,7 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Player } from "@lottiefiles/react-lottie-player";
+// import { Player } from "@lottiefiles/react-lottie-player";
 
 export const EmptyOrg = () => {
   return (
@@ -19,9 +19,9 @@ export const EmptyOrg = () => {
         width={200}
       /> */}
       
-      <Player src={"/Create-Org.json"} autoplay
+      {/* <Player src={"/Create-Org.json"} autoplay
   loop 
-  style={{ height: '250px', width: '250px' }} />
+  style={{ height: '250px', width: '250px' }} /> */}
       <h2 className="text-2xl font-semibold mt-6">
         Welcome to Board
       </h2>
