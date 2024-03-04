@@ -20,7 +20,7 @@ const NewBoardButton = ({orgId,disabled ,isLoading}:NewBoardButtonProps) => {
   const onClick = () => {
     mutate({
       orgId,
-      title: "Untitled"
+      title: "New board"
     })
       .then((id) => {
         toast.success("Board created"); 

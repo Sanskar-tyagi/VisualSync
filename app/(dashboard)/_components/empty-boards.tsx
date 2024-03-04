@@ -16,7 +16,7 @@ const EmptyBoards = () => {
     const onClick=()=>{
         mutate({
             orgId:organization.id,
-            title:"untities"
+            title:"New board"
         })
         .then((id)=> {
            toast.success("Board created successfully")
