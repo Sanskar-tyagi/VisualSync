@@ -50,10 +50,11 @@ export const ToolBar = ({
         <ToolButton 
        label="Sticky Note"
        icon={StickyNote}
-       onClick={() => setCanvasState({
-        mode: CanvasMode.Inserting,
-        layerType: LayerType.Note,
-      })}
+      //  onClick={() => setCanvasState({
+      //   mode: CanvasMode.Inserting,
+      //   layerType: LayerType.Note,
+      // })}
+        onClick={() =>{}}
       isActive={
         canvasState.mode === CanvasMode.Inserting &&
         canvasState.layerType === LayerType.Note
@@ -74,10 +75,11 @@ export const ToolBar = ({
         <ToolButton 
        label="Ellipse"
        icon={Circle}
-       onClick={() => setCanvasState({
-        mode: CanvasMode.Inserting,
-        layerType: LayerType.Ellipse,
-      })}
+      //  onClick={() => setCanvasState({
+      //   mode: CanvasMode.Inserting,
+      //   layerType: LayerType.Ellipse,
+      // })}
+      onClick={() =>{}}
       isActive={
         canvasState.mode === CanvasMode.Inserting &&
         canvasState.layerType === LayerType.Ellipse
@@ -86,9 +88,10 @@ export const ToolBar = ({
         <ToolButton 
        label="Pen"
        icon={Pencil}
-       onClick={() => setCanvasState({
-        mode: CanvasMode.Pencil,
-      })}
+      //  onClick={() => setCanvasState({
+      //   mode: CanvasMode.Pencil,
+      // })}
+      onClick={() =>{}}
       isActive={
         canvasState.mode === CanvasMode.Pencil
       }
